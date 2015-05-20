@@ -1,0 +1,263 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html, body {height:100%;}
+
+body {
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background:#A7D2E3;
+}
+
+video {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 666px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.chapters {
+  height: 400px;
+  display: block;
+  overflow: hidden;
+}
+.chapters ul {
+  list-style: none;
+}
+.chapters ul li{
+  height:75px;
+}
+.button {
+  background: #FFFFFF;
+  color: #337ab7;
+  padding: 8px;
+  display: block;
+}
+.active {
+  background: #337ab7;
+  color: white;
+  padding: 8px;
+  display: block;
+}
+
+/* Responsive: Portrait tablets and up */
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .feed-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 86%;
+  }
+  hr {
+    position: absolute;
+    width: 93%;
+    top: 3px;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    background: #FFFFFF;
+    color: #fefefe;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .header .title {
+    color: #4a4a4a;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header .title span{
+    background: #D62927;
+    border-radius: 15px;
+    color: white;
+    display: inline-block;
+    padding: 3px;
+    font-size: 26px;
+  }
+  .input-search input[type="text"] {
+    background: url(../images/search-icon.svg) no-repeat scroll 7px 7px;
+    background-size: 26px;
+    border-width: 0px;
+    border-left: 1px solid #c4c4c4;
+    font-weight: normal;
+    font-size: 17px;
+    display: block;
+    padding: 9px 0px 9px 40px;
+    width: 100%;
+    outline: 0 none;
+    color: #4a4a4a;
+  }
+  .list-clips {
+    background:#45c1f7;
+  }
+  .list-clips span{
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+  .content-clips {
+    display: block;
+    height: auto;
+    background-color: #FFFFFF;
+    border-right: 1px solid #d5d5d5;
+    color: white;
+    min-height: 446px;
+    padding: 1%;
+    margin: 0;
+  }
+  .clip_area {
+    position:relative;
+  }
+  .content-clips span.subtitle{
+    background-color:white;
+    border: 1px solid #d5d5d5;
+    padding: 2px;
+    color: #9a9a9a;
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 15px;
+    position:relative;
+    z-index: 1;
+  }
+  .content-clips ul{
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0;
+    max-height: 355px;
+  }
+  .content-clips ul li{
+    color: #d5d5d5;
+    font-weight: bold;
+    padding: 2% 4%;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .content-clips ul li.active-clip{
+    border: 0;
+    border-left: 5px solid #4ec629;
+    padding-left:2%;
+  }
+  .content-clips ul li a p{
+    text-align:left;
+    display:block;
+  }
+  .content-clips ul li a span{
+    font-size:10px;
+    color:#9a9a9a;
+    text-align:right;
+    display:block;
+  }
+  .content-video {
+    display: block;
+    height: auto;
+    background-color: #FFFFFF;
+    color: white;
+    min-height: 446px;
+    padding: 1%;
+    margin: 0;
+  }
+  .main-content {
+    background-color:#FAFAFA;
+    text-align:center;
+  }
+  .main-content h2 {
+    font-size:30px;
+    color:#333333;
+  }
+  .main-content h3 {
+    font-size: 16px;
+    color: #9a9a9a;
+    padding: 1% 2%;
+  }
+  .white-bg {
+    background-color:#CCD5DB;
+  }
+  #description_clip {
+    color: #333333;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .preview {
+    background: #FFF;
+    color:#CCCCCC;
+    font-size:40px;
+    text-align: center;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

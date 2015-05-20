@@ -1,0 +1,56 @@
+<div class="row feed-content" ng-controller="MainCtrl" ng-keyup="main.keyup($event)">
+  <div class="row header">
+    <div class="col-md-3 text-left title">
+      Feed <span>Reader</span>
+    </div>
+    <div class="col-md-9 input-search text-left">
+      <input placeholder="Enter a URL" ng-model="main.url" ng-blur="main.focus()" ng-change="main.loadFeed(main.url)" id="text-feed" type="text"></input>
+    </div>
+  </div>
+  <div class="row main-content">
+    <h2>
+      {{main.feed.title}}
+    </h2>
+    <h3>
+      {{main.feed.description}}
+    </h3>
+  </div>
+  <div class="row">
+    <div class="col-md-3 content-clips">
+      <hr></hr>
+      <span class="subtitle">
+        Chapters List
+      </span>
+      <div class="col-md-12">
+        <ul ng-show="main.lengthChapters > 0">
+          <li>
+            <a class="text-center button glyphicon glyphicon-chevron-up" ng-class="{'active':main.iterator === 0}" ng-click="main.previousClip()"></a>
+          </li>
+          <li ng-class="{'active-clip':main.iterator === $index+1}" ng-repeat="item in main.feed.entries | slice:main.beginClip:main.endClip">
+            <a>
+              <p>{{item.title}}</p>
+              <span>{{item.publishedDate}}</span>
+            </a>
+          </li>
+          <li>
+            <a class="text-center button glyphicon glyphicon-chevron-down"  ng-class="{'active':main.iterator === 5}" ng-click="main.nextClip()"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9 content-video">
+      <div id="clip_area">
+        <div class="preview" ng-show="main.url == ''">
+          <p> Enter a URL to watch some videos</p>
+        </div>
+        <div class="preview" ng-show="main.clipPlayed == false && main.lengthChapters > 0">
+          <p> Select some chapter to play video!</p>
+        </div>
+        <video id="clip_player" preload="auto" ng-src="{{main.trustSrc(main.current.link_video)}}" type="video/mp4" autoplay ></video>
+      </div>
+      <div id="description_clip">
+          {{main.current.description}}
+      </div>
+    </div>
+  </div>
+</div>
