@@ -1,6 +1,16 @@
 Instructions
 ============
 
+Enter in input the nexts URL:
+
+http://rss.cnn.com/services/podcasting/studentnews/rss.xml
+
+or
+
+http://rss.cnn.com/services/podcasting/ac360/rss.xml
+
+To navigate for vídeos, use the UP and DOWN keys, and for playing videos press ENTER.
+
 Important content of structure:
 
 - app/  : Contains the main source code of application (controller, filter, service, images, ...)
