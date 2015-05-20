@@ -1,5 +1,20 @@
-Instructions
-============
+
+How to works the application?
+=============================
+
+
+The application requires to enter a URL with a valid content of RSS, like for example:
+
+http://rss.cnn.com/services/podcasting/studentnews/rss.xml
+or
+http://rss.cnn.com/services/podcasting/ac360/rss.xml
+
+When we type a URL immediately at the left side will be loaded the chapters and you can move through from them using the keys UP and DOWN.
+
+To navigate to nexts chapters, press the arrows with ENTER.
+
+If we want to watch more videos, we will have to go forward until the 'Down Arrow' is active, when press ENTER on it, it will be loaded the next range of chapters
+
 
 Enter in input the nexts URL:
 
@@ -11,7 +26,8 @@ http://rss.cnn.com/services/podcasting/ac360/rss.xml
 
 To navigate for vídeos, use the UP and DOWN keys, and for playing videos press ENTER.
 
-Important content of structure:
+Main structure:
+====================
 
 - app/  : Contains the main source code of application (controller, filter, service, images, ...)
   - images/
@@ -60,21 +76,6 @@ Start the server:
 
   Your web browser will launch your newly scaffolded application in a new tab:
 
-How to works the application?
-=============================
-
-
-The application requires to enter a URL with a valid content of RSS, like for example:
-
-http://rss.cnn.com/services/podcasting/studentnews/rss.xml
-or
-http://rss.cnn.com/services/podcasting/ac360/rss.xml
-
-When we type a URL immediately at the left side will be loaded the chapters and using the keys can move through from them.
-
-If press key DOWN, it will go forward of chapters, if we want to play some of them, press ENTER
-
-If we want to watch more videos, we will have to go forward until the 'Down Arrow' is active, when press ENTER on it, it will be loaded the next range of chapters
 
 Execute the application from a Server?
 ======================================
